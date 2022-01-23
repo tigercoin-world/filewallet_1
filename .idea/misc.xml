@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/shsfs/AndroidStudioProjects/filewallet/app/src/main/res/layout/activity_customer_list.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/shsfs/AndroidStudioProjects/filewallet/app/src/main/res/layout/activity_main.xml" value="0.321875" />
         <entry key="..\:/Users/shsfs/AndroidStudioProjects/test/app/src/main/res/layout/activity_cprice.xml" value="0.276268115942029" />
         <entry key="..\:/Users/shsfs/AndroidStudioProjects/test/app/src/main/res/layout/activity_customer_list.xml" value="0.178125" />
         <entry key="..\:/Users/shsfs/AndroidStudioProjects/test/app/src/main/res/layout/activity_filfoxweb.xml" value="0.22" />
         <entry key="..\:/Users/shsfs/AndroidStudioProjects/test/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/shsfs/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.23854166666666668" />
       </map>
     </option>
   </component>

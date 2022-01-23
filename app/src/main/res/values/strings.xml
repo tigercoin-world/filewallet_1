@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">test</string>
+    <string name="withdraw">출금하기</string>
 </resources>
