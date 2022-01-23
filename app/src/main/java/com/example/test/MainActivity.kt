@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ActivityCustomerListBinding::class.java )
             startActivity(intent)
         }
-
+//    sdasd
 
     }
 }
