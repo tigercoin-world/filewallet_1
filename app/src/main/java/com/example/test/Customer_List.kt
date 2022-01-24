@@ -13,10 +13,10 @@ class CustomerList : AppCompatActivity() {
 
     var CustomerList = arrayListOf<Customer>(
           Customer("이진형","f2r2l4exu5iq46okt3vh2yq72vlumx25hm7kptzyq", "3%","2021-09-20",R.drawable.ic_baseline_link_24 ),
-          Customer("강민우","f3r2l4exu5iq46okt3vh2yq72vlumx25hm7kptzyq", "2%","2021-10-20",R.drawable.ic_baseline_link_24 ),
-          Customer("장은영","f4r2l4exu5iq46okt3vh2yq72vlumx25hm7kptzyq", "3%","2021-12-20",R.drawable.ic_baseline_link_24 ),
-          Customer("황다영","f5r2l4exu5iq46okt3vh2yq72vlumx25hm7kptzyq", "2%","2022-01-20",R.drawable.ic_baseline_link_24 ),
-          Customer("김민재","f6r2l4exu5iq46okt3vh2yq72vlumx25hm7kptzyq", "3%","2022-01-25",R.drawable.ic_baseline_link_24 )
+          Customer("강민우","f1dgpstcqx6l57fzhwtynimqdoh3il7ro2eazspei", "2%","2021-10-20",R.drawable.ic_baseline_link_24 ),
+          Customer("장은영","f1dgpstcqx6l57fzhwtynimqdoh3il7ro2eazspei", "3%","2021-12-20",R.drawable.ic_baseline_link_24 ),
+          Customer("황다영","f1dgpstcqx6l57fzhwtynimqdoh3il7ro2eazspei", "2%","2022-01-20",R.drawable.ic_baseline_link_24 ),
+          Customer("김민재","f1dgpstcqx6l57fzhwtynimqdoh3il7ro2eazspei", "3%","2022-01-25",R.drawable.ic_baseline_link_24 )
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

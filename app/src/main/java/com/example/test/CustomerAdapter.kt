@@ -1,16 +1,20 @@
 package com.example.test
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
 
 //ArrayList안에 Customer라는 클래스형태를 넣는다. baseadapter를 상속받았음,
 //어댑터는 코드연결할 때 쓴다고 보면된다. getView 가 호출되면서 만들어준다.
-class CustomerAdapter (val context: Context, val CustomerList: ArrayList<Customer>) : BaseAdapter(){
+class CustomerAdapter (val context: Context, val CustomerList: ArrayList<Customer>) : BaseAdapter() {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view: View = LayoutInflater.from(context).inflate(R.layout.list_customer, null)
 // 포지션은 위치를 말함. 0부터 센다.
@@ -24,7 +28,14 @@ class CustomerAdapter (val context: Context, val CustomerList: ArrayList<Custome
         val customer = CustomerList[position]
         //layoutInflater는 view를 붙이는 과정
 
+
+        val linkurl = customer.address.toString()
         link.setImageResource(customer.link)
+        link.setOnClickListener{
+            var abc = Intent(Intent.ACTION_VIEW, Uri.parse("https://filfox.info/zh/address/"+ linkurl))
+            context.startActivity(abc)
+        }
+
         name.text = customer.name
         address.text = customer.address
         date.text = customer.date
@@ -32,6 +43,8 @@ class CustomerAdapter (val context: Context, val CustomerList: ArrayList<Custome
 
         return view
     }
+
+
 
     override fun getCount(): Int {
         return CustomerList.size
