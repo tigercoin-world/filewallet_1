@@ -3,7 +3,6 @@ package com.example.test
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.test.databinding.ActivityCustomerListBinding
 import com.example.test.databinding.ActivityMainBinding
 
 
@@ -23,10 +22,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnCslist.setOnClickListener {
-            val intent = Intent(this, ActivityCustomerListBinding::class.java )
+            val intent = Intent(this, CustomerList::class.java )
             startActivity(intent)
         }
-//    sdasd
 
     }
 }
