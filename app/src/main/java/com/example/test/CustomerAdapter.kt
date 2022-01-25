@@ -24,10 +24,8 @@ class CustomerAdapter (val context: Context, val CustomerList: ArrayList<Custome
         val date = view.findViewById<TextView>(R.id.tv_date)
         val product = view.findViewById<TextView>(R.id.tv_product)
 
-
         val customer = CustomerList[position]
         //layoutInflater는 view를 붙이는 과정
-
 
         val linkurl = customer.address.toString()
         link.setImageResource(customer.link)
