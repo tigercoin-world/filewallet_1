@@ -1,5 +1,6 @@
 package com.example.test
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -37,6 +38,11 @@ class CustomerList : AppCompatActivity() {
         val Adapter = CustomerAdapter(this, CustomerList)
         binding.lv.adapter = Adapter
 
+
+        binding.btAdd.setOnClickListener {
+            val intent = Intent(this, Cl_add::class.java)
+            startActivity(intent)
+        }
 
 
     }

@@ -11,12 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-
-
-        <activity android:name=".CustomerList"/> //이름 문제였음, xml 파일의 이름변경하니까 해결
-<!--        <activity-->
-<!--            android:name=".CustomerList"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".Cl_add"
+            android:exported="false" />
+        <activity android:name=".CustomerList" /> <!-- <activity -->
+        <!-- android:name=".CustomerList" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".filfoxweb"
             android:exported="false" />
