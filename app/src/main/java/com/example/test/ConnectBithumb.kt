@@ -13,7 +13,7 @@ import java.net.URL
     class ConnectBithumb : AsyncTask <String, String, String>(){
 
         //MainActivity의 TextView를 set하기 위해서
-        var resultprice: TextView= null
+        var resultprice: TextView? = null
 
         override fun onProgressUpdate(vararg values: String?) {
             super.onProgressUpdate(*values)
@@ -39,7 +39,7 @@ import java.net.URL
 
             val br = BufferedReader(InputStreamReader(`is`))
             var readLine: String? = null //데이터를 한 줄씩 읽기 위해서
-            var resultStringBuilder : String = null
+            var resultStringBuilder : String = ""
 
             do {
                 readLine = br.readLine()

@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     )
 
     //빗썸의 public API를 사용합니다.
-    var url = "https://api.bithumb.com/public/orderbook/BTC"
+    var url = "https://api.bithumb.com/public/ticker/BTC_KRW"
 
     //ConnectBithumb라는 클래스를 만들어서 사용할 것 입니다.
     //해당 클래스는 추후에 API url을 연결하고 TextView를 set합니다.
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         connectBithumb = ConnectBithumb()
 
         //connectBtn을 누르면 빗썸 API의 가격을 가져옵니다.
-        binding.btnPricecheck.setOnClickListener  { view ->
+        binding.btnPricecheck.setOnClickListener { view ->
             Log.d("preUrl", url);//url확인
 
             //ConnectBithumb의 TextView 변수를 set합니다.
@@ -73,3 +73,4 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+}
