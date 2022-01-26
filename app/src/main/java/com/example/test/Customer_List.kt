@@ -1,11 +1,13 @@
 package com.example.test
 
 import android.content.Intent
+import android.graphics.Insets.add
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import com.example.test.databinding.ActivityCustomerlistBinding
+
 
 
 class CustomerList : AppCompatActivity() {
@@ -19,6 +21,8 @@ class CustomerList : AppCompatActivity() {
           Customer("미친듯","f1dgpstcqx6l57fzhwtynimqdoh3il7ro2eazspei", "2%","2022-01-20",R.drawable.ic_baseline_link_24 ),
           Customer("천사둘","f1dgpstcqx6l57fzhwtynimqdoh3il7ro2eazspei", "3%","2022-01-25",R.drawable.ic_baseline_link_24 )
     )
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,3 +51,4 @@ class CustomerList : AppCompatActivity() {
 
     }
 }
+
